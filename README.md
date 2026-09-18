@@ -21,19 +21,19 @@ The project follows a layered architecture (**UI → Service → DAO → Databas
 - Login screen with **role-based access** (Admin / Student)
 - Passwords stored as **SHA-256 hashes**
 
-### 🛠 Admin Portal
+###  Admin Portal
 - **Dashboard** – live counts of total students, total rooms, available rooms and pending / in-progress complaints
 - **Student management** – add, update, delete and browse students in a sortable table (click a row to load it into the form)
 - **Room management** – add and delete rooms (2-, 3- or 4-seater; capacity 1–8) and view occupancy and status
 - **Smart room allocation** – enter a student ID plus a preferred block and room type; the system ranks the available rooms by score and allocates the one you choose
 - **Complaint management** – view all complaints (highest priority first) and update their status: `PENDING` → `IN_PROGRESS` → `RESOLVED`
 
-### 🎓 Student Portal
+###  Student Portal
 - **My Room** – see the allocated room number, block and type
 - **Submit Complaint** – choose a category (Electrical, Water, Cleaning, Internet, Other), a severity and a description (max 500 characters)
 - **My Complaints** – track the priority and status of every complaint raised
 
-### 🧠 Built-in Logic
+###  Built-in Logic
 - **Room recommendation score (max 100):** +40 for the preferred block, +30 for the preferred room type, +30 if the room has a free bed. Full and under-maintenance rooms are never suggested.
 - **Automatic complaint priority:**
 
@@ -50,7 +50,7 @@ The project follows a layered architecture (**UI → Service → DAO → Databas
 
 ---
 
-## 🧰 Technologies / Tools Used
+##  Technologies / Tools Used
 
 | Area | Technology |
 |---|---|
@@ -84,7 +84,7 @@ SmartHostelManagementSystem/
 
 ---
 
-## 🚀 Steps to Install & Run
+##  Steps to Install & Run
 
 ### Prerequisites
 - **JDK 25** (the `pom.xml` targets Java 25 — change `maven.compiler.source/target` if you use an older JDK such as 21)
@@ -143,7 +143,7 @@ Alternatively, open the project in **IntelliJ IDEA / VS Code**, let Maven import
 
 ---
 
-## 🧪 Instructions for Testing
+##  Instructions for Testing
 
 ### Automated tests
 Run the JUnit 5 unit tests (no database required):
